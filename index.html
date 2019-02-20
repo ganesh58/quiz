@@ -1,23 +1,27 @@
 <!doctype html>
 <html>
     <head>
-        <title>Example String CompareTravelers Estimator</title>
+        <title>Find the max</title>
     </head>
     <body>
         <main>
             <header>JavaScript Interactive Application</header><br>
-            <p>Enter Your Number of cars: <label><input type="number" id="num1"></label></p>
-            <p>Enter Your Number of peope: <label><input type="number" id="num2"></label></p>
+            <p>Enter Your Number 1: <label><input type="number" id="num1"></label></p>
+            <p>Enter Your Number 2: <label><input type="number" id="num2"></label></p>
             <button onclick="myFunction()">Click me!</button>
             <p id="result"></p>
         </main>
         <script>
             function myFunction(){
-                var  x = document.getElementById('num1').value;
-                var  y = document.getElementById('num2').value;
-                var result = x * y;
-                console.log(result);
+                var  one = document.getElementById('num1').value;
+                var  two = document.getElementById('num2').value;
+                
+                // var result = x * y;
+                // console.log(result);
+                // document.getElementById("result").innerHTML= result;
+                var result = Math.max(one,two);
                 document.getElementById("result").innerHTML= result;
+
             }
         </script>
     </body>
