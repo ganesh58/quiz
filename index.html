@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Example String CompareTravelers Estimator</title>
+    </head>
+    <body>
+        <main>
+            <header>JavaScript Interactive Application</header><br>
+            <p>Enter Your Number of cars: <label><input type="number" id="num1"></label></p>
+            <p>Enter Your Number of peope: <label><input type="number" id="num2"></label></p>
+            <button onclick="myFunction()">Click me!</button>
+            <p id="result"></p>
+        </main>
+        <script>
+            function myFunction(){
+                var  x = document.getElementById('num1').value;
+                var  y = document.getElementById('num2').value;
+                var result = x * y;
+                console.log(result);
+                document.getElementById("result").innerHTML= result;
+            }
+        </script>
+    </body>
+</html>
+
+
+
+
+
+<!-- 
+
+
+function myFunction() {
+    var y = document.getElementById("txt1").value;
+    var z = document.getElementById("txt2").value;
+    var x = y + z;
+    document.getElementById("demo").innerHTML = x;
+  }
+
+
+
+
+
+  <p>
+    Click the button to calculate x.
+    <button onclick="myFunction()">Try it</button>
+  </p>
+  <p>
+    Enter first number:
+    <input type="text" id="txt1" name="text1" value="1">
+    Enter second number:
+    <input type="text" id="txt2" name="text2" value="2">
+  </p>
+  <p id="demo"></p> -->
